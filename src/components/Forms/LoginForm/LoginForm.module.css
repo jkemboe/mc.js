@@ -16,9 +16,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: rgb(185, 185, 185) 2px solid;
+  border: 2px solid lightgreen;
   border-radius: 7.5px;
-  background: #eeeeee78;
+  color: white;
   width: 562.5px;
   margin: 25px;
   padding: 50px 31.25px;
@@ -50,13 +50,12 @@
 .wrappedInputField input {
   width: 225px;
   line-height: 25px;
-  border-style: inset;
-  border-width: 2.5px;
+  border: 1px solid white;
+  border-radius: 4px;
   font-size: 15px;
   font-family: monospace;
-  padding: 1.25px;
+  padding: 5px;
   background-color: white;
-  border-radius: 4px; /* added border-radius*/
 }
 
 .wrappedInputField input:focus {
@@ -64,9 +63,9 @@
 }
 
 .wrappedInputField span {
-  font-size: 10px;
+  font-size: 11px;
   margin: 3px;
-  color: red;
+  color: lightgreen;
 }
 
 .navigations {
@@ -80,17 +79,30 @@
 .needAccount {
   font-size: 18.75px;
   font-weight: 400;
-  color: blue;
-  text-decoration: underline;
+  padding: 0;
+  color: lightgreen;
+  text-decoration: none;
   cursor: pointer;
   background: transparent;
   border: none;
+  transition: 0.3s;
 }
 
-.needAccount:focus {
-  outline: none;
+.needAccount:hover {
+  color: darkgreen;
 }
 
 .login {
-  padding: 6.25px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+.login:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+  color: black;
 }
